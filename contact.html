@@ -1,0 +1,66 @@
+7<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ben Brian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Ben Brian</a>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="projects.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()" class="ml-4 bg-gray-200 px-3 py-1 rounded dark:bg-gray-700">🌓</button>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-center mb-8">Contact Me</h1>
+
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-8">
+      <form id="contact-form" class="space-y-6">
+        <div>
+          <label class="block mb-2">Name</label>
+          <input type="text" name="from_name" class="w-full border px-4 py-2 rounded-lg dark:bg-gray-700" required>
+        </div>
+        <div>
+          <label class="block mb-2">Email</label>
+          <input type="email" name="reply_to" class="w-full border px-4 py-2 rounded-lg dark:bg-gray-700" required>
+        </div>
+        <div>
+          <label class="block mb-2">Message</label>
+          <textarea name="message" rows="5" class="w-full border px-4 py-2 rounded-lg dark:bg-gray-700" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+      </form>
+
+      <div class="mt-8 text-center">
+        <p>Email: <a href="mailto:otienobenbrian@gmail.com" class="text-blue-600">otienobenbrian@gmail.com</a></p>
+        <p>Location: Nairobi, Kenya</p>
+        <div class="mt-4 space-x-6">
+          <a href="https://github.com/benbrian451" target="_blank" class="hover:text-blue-600">🐺GitHub</a>
+          <a href="https://www.figma.com/files/team/1492598362177075417/recents-and-sharing?fuid=1492598359881555223" target="_blank" class="hover:text-blue-600">💢Figma</a>
+          <a href="https://x.com/ben_brian_004" target="_blank" class="hover:text-blue-600">❌X(formerly twitter)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 dark:bg-black">
+    © <span id="y"></span> Ben Brian
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function toggleDarkMode(){
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>

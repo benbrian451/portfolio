@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Brian | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 transition-colors duration-300" id="body">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-900 dark:text-gray-200">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Ben Brian</a>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="projects.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()" class="ml-4 bg-gray-200 px-3 py-1 rounded dark:bg-gray-700">🌓</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20">
+    <img src="profile.jpg.png" alt="Profile Photo" class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-blue-500">
+    <h1 class="text-5xl font-extrabold mt-6">Hello, I'm <span class="text-blue-600">Ben Brian</span></h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto">IT & AI Enthusiast • Web Developer • Photoshop & Illustrator • Java & C++</p>
+    <div class="mt-6 space-x-4">
+      <a href="projects.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">See My Work</a>
+      <a href="contact.html" class="border px-6 py-3 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">Contact Me</a>
+      <a href="Ben_Brian_CV.pdf" download class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">Download CV</a>
+    </div>
+    <div class="mt-6 space-x-6 text-xl">
+      <a href="https://github.com/benbrian451" target="_blank" class="hover:text-blue-600">🐺sGitHub</a>
+      <a href="https://www.figma.com/files/team/1492598362177075417/recents-and-sharing?fuid=1492598359881555223" target="_blank" class="hover:text-blue-600">💢Figma</a>
+      <a href="https://x.com/ben_brian_004" target="_blank" class="hover:text-blue-600">❌X(formerly twitter)</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700 leading-relaxed dark:text-gray-300">
+      I am a passionate IT and AI enthusiast from Siaya, currently based in Nairobi. 
+      Skilled in HTML, CSS, Java, and C++, I combine creativity with technical knowledge. 
+      With experience in Photoshop and Illustrator, I bridge the gap between design and development, 
+      always eager to explore innovative ideas in AI management.
+    </p>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 dark:bg-black">
+    © <span id="y"></span> Ben Brian | Nairobi, Kenya
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function toggleDarkMode(){
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>

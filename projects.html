@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ben Brian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Ben Brian</a>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="projects.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()" class="ml-4 bg-gray-200 px-3 py-1 rounded dark:bg-gray-700">🌓</button>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-center mb-12">My Projects</h1>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+        <img src="image 1.png" alt="Project 1" class="rounded-lg mb-4">
+        <h2 class="text-xl font-semibold">Web Development</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Responsive websites built using HTML, CSS, Java, and C++ integrations. <a href="https://enchanting-starburst-6a193c.netlify.app/ " style="color: blue; font-size: larger;">see more...</a></p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+        <img src="image 2.png" alt="Project 2" class="rounded-lg mb-4">
+        <h2 class="text-xl font-semibold">AI Concepts</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Innovative ideas in AI management and problem-solving automation. <a href="https://www.etsy.com/uk/listing/4310235570/ai-tiktok-automation-workflow-no-code?epik=dj0yJnU9RVYzM3kxZVNmSGFSdERVT0d0UkRWa04ydVR5S3hieFQmcD0wJm49NFpkYlZEQkhwb3U0MlFTRlc3eXJadyZ0PUFBQUFBR2l3eUQ0" style="color: blue; font-size: larger;">see more...</a></p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+        <img src="image.png" alt="Project 3" class="rounded-lg mb-4">
+        <h2 class="text-xl font-semibold">Graphic Design</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Creative designs and branding solutions with Photoshop & Illustrator.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 dark:bg-black">
+    © <span id="y"></span> Ben Brian
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function toggleDarkMode(){
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
